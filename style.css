@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: rgb(50, 159, 130);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+h2 {
+  color: white;
+  font-size: 40px;
+}
+.prompt {
+  background-color: rgb(89, 189, 156);
+  padding: 5px;
+  width: 620px;
+  border: 3px solid rgb(122, 228, 193);
+  border-radius: 10px;
+}
+input,
+button {
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+}
+input {
+  background-color: rgb(89, 189, 156);
+  width: 75%;
+  outline: none;
+  color: white;
+}
+button {
+  background-color: rgb(50, 159, 130);
+  color: white;
+  width: 20%;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: rgb(35, 96, 80);
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.images div {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(5, 110, 84);
+  border-radius: 10px;
+  border: 3px solid rgb(20, 127, 89);
+}
+.images div img {
+  width: 100%;
+  border-radius: 10px;
+}
+@media (max-width: 669px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .prompt {
+    width: 300px;
+  }
+  input {
+    width: 90%;
+  }
+  button {
+    width: 100%;
+  }
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .images div {
+    width: 180px;
+    height: 180px;
+  }
+}
